@@ -16,6 +16,7 @@ st.set_page_config(page_title="Medi Bud Prescription Solver", page_icon="💊")
 
 st.title("💊 Prescription Decoder Bot")
 st.caption("Upload a prescription image and ask questions about it!")
+st.caption("Try not to ask irrelevant questions and keep in mind the size of the image file to be less than or equal to 3MB")
 st.write('[![View Source Code](https://img.shields.io/badge/View%20Source%20Code-%2300A7E1.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/XAheli/Medi_Bud)')
 
 @st.cache_resource

@@ -78,8 +78,8 @@ To set up the project locally, follow the steps below:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/CodeRreaper69/MEDI_BUD_LLM_RAG_LANGCHAIN_MEDICAL_ASSISTANT.git
-   cd MEDI_BUD_LLM_RAG_LANGCHAIN_MEDICAL_ASSISTANT
+   git clone https://github.com/CodeRreaper69/MED_BUD_LLM_RAG_LANGCHAIN_MEDICAL_ASSISTANT.git
+   cd MED_BUD_LLM_RAG_LANGCHAIN_MEDICAL_ASSISTANT
 
 2. **Create and activate a virtual environment**:
    ```bash

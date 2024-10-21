@@ -4,7 +4,7 @@
 
 ## Overview
 
-**Medi Bud** is an AI-powered medical chatbot designed to assist users with health-related queries, document uploads, and prescription analysis. It provides a preliminary level of health guidance and can direct users to appropriate healthcare actions. Leveraging the power of large language models like OpenAI’s GPT and Google Gemini, Medi Bud offers an interactive way to understand and explore basic medical information, medications, and diagnoses.
+**Medi Bud** is an AI-powered medical chatbot designed to assist users with health-related queries, document uploads, and prescription analysis. It provides a preliminary level of health guidance and can direct users to appropriate healthcare actions. Leveraging the power of large language models like OpenAI’s GPT and Google Gemini, Llama3 Medi Bud offers an interactive way to understand and explore basic medical information, medications, and diagnoses.
 
 > **Note**: This chatbot is intended for **informational purposes only**. Always consult a healthcare professional for any medical advice.
 

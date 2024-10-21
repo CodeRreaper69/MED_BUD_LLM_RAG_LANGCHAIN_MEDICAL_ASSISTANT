@@ -14,7 +14,7 @@ st.header('AI Med bot with Web Access')
 st.write('Equipped with internet access, enables users to ask questions about recent events')
 st.write('[![View Source Code](https://img.shields.io/badge/View%20Source%20Code-%2300A7E1.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/XAheli/Medi_Bud)')
 st.caption("Try to ask those things which are small to answer.. since this is just a prototype")
-st.caption("Fun Fact: You can Solve Mathematics from here...it solves pretty well...try it! ")
+st.caption("Fun Fact: Apart from medical queries... It can solve Maths also...Try it! ")
 class InternetChatbot:
 
     def __init__(self):

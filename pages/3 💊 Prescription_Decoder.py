@@ -26,9 +26,9 @@ model = load_gemini_model()
 
 def analyze_prescription(image, prompt):
     try:
+        # Use the PIL image directly
         response = model.generate_content([prompt, image])
-        st.write(response)  # Log the full response for debugging
-        return response.text if hasattr(response, 'text') else "No valid response received."
+        return response.text
     except Exception as e:
         return f"An error occurred: {str(e)}"
 

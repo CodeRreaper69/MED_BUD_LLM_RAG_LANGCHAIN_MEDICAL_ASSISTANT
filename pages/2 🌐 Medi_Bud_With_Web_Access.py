@@ -13,6 +13,7 @@ st.set_page_config(page_title="Medi Bud RAG Net", page_icon="🌎")
 st.header('AI Med bot with Web Access')
 st.write('Equipped with internet access, enables users to ask questions about recent events')
 st.write('[![View Source Code](https://img.shields.io/badge/View%20Source%20Code-%2300A7E1.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/XAheli/Medi_Bud)')
+st.caption("Try to ask those things which are small and not so big... it is a prototype")
 class InternetChatbot:
 
     def __init__(self):

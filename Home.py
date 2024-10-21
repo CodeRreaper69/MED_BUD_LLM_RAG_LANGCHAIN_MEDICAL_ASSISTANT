@@ -194,7 +194,7 @@ st.write("""
         </a>
     </div>
     <div style="display: flex; justify-content: center; align-items: center; gap: 5px; margin-top: 8px;">
-        <span style="font-size: 12px; color: #5d5d5d;">YOU ARE VISITOR</span>
+        <span style="font-size: 12px; color: #5d5d5d;">**YOU ARE VISITOR**</span>
         <img src="https://profile-counter.glitch.me/Medi_Bud_Streamlit/count.svg" alt="visitor count" style="height: 24px;"/>
     </div>
 </div>

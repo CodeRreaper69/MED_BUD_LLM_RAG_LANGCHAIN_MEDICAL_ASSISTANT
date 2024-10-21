@@ -11,7 +11,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 st.set_page_config(page_title="Med Bud Chatbot", page_icon="⚕️")
 st.header('AI-Powered Virtual Health Assistant')
 st.write('Providing preliminary consultations and answering health-related queries for patients in remote areas.')
-st.write('[![view source code ](https://img.shields.io/badge/view_source_code-gray?logo=github)](https://github.com/XAheli/Medi_Bud)')
+st.write('[![View Source Code](https://img.shields.io/badge/View%20Source%20Code-%2300A7E1.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/XAheli/Medi_Bud/blob/main/LLM_Langchain_BOT/pages/2%20%F0%9F%8C%90%20Med_Bud_With_Web_Access.py)')
 
 class MedicalChatbot:
 

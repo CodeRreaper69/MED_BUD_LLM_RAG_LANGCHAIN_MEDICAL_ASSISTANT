@@ -15,7 +15,7 @@ logger = get_logger('Langchain-Chatbot')
 
 #decorator
 def enable_chat_history(func):
-    if st.secrets("OPENAI_API_KEY"):
+    if os.environ.get("OPENAI_API_KEY"):
 
         # to clear chat history after swtching chatbot
         current_page = func.__qualname__

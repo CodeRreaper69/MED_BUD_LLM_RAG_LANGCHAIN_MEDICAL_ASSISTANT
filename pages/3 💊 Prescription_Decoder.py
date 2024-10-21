@@ -2,13 +2,13 @@ import streamlit as st
 import google.generativeai as genai
 import os
 from PIL import Image
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 
 # Load environment variables
-load_dotenv()
+#load_dotenv()
 
 # Configure Google API
-GOOGLE_API_KEY = os.getenv("API_KEY")
+GOOGLE_API_KEY = st.secrets("API_KEY")
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # Streamlit page configuration

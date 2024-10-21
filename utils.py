@@ -9,13 +9,13 @@ from langchain_community.embeddings.fastembed import FastEmbedEmbeddings
 
 logger = get_logger('Langchain-Chatbot')
 
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 # Load environment variables from the .env file
-load_dotenv()
+#load_dotenv()
 
 #decorator
 def enable_chat_history(func):
-    if os.getenv("OPENAI_API_KEY"):
+    if st.secrets("OPENAI_API_KEY"):
 
         # to clear chat history after swtching chatbot
         current_page = func.__qualname__
@@ -94,12 +94,12 @@ def configure_llm():
     # if llm_opt == "llama3.1:8b":
         # llm = ChatOllama(model="llama3.1", base_url=os.getenv["OLLAMA_ENDPOINT"])
     if llm_opt == "llama3.2:3b":
-        llm = ChatOpenAI(model_name="gpt-4o-mini", temperature=0, streaming=True, api_key=os.getenv("OLLAMA_ENDPOINT_KEY"))
+        llm = ChatOpenAI(model_name="gpt-4o-mini", temperature=0, streaming=True, api_key=st.secrets("OLLAMA_ENDPOINT_KEY"))
     elif llm_opt == "gpt-4o-mini":
         #llm = ChatOpenAI(model_name=llm_opt, temperature=0, streaming=True, api_key=os.getenv["OPENAI_API_KEY"])
-        llm = ChatOpenAI(model_name="gpt-4o-mini", temperature=0, streaming=True, api_key=os.getenv("OPENAI_API_KEY"))
+        llm = ChatOpenAI(model_name="gpt-4o-mini", temperature=0, streaming=True, api_key=st.secrets("OPENAI_API_KEY"))
     elif llm_opt == "gemini":
-        llm = ChatOpenAI(model_name="gpt-4o-mini", temperature=0, streaming=True, api_key=os.getenv("GEMINI_API_KEY"))
+        llm = ChatOpenAI(model_name="gpt-4o-mini", temperature=0, streaming=True, api_key=st.secrets("GEMINI_API_KEY"))
     else:
         model, openai_api_key = choose_custom_openai_key()
         llm = ChatOpenAI(model_name=model, temperature=0, streaming=True, api_key=openai_api_key)

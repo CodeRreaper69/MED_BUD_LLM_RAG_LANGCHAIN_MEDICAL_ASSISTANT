@@ -30,7 +30,7 @@ def analyze_prescription(image, prompt):
         response = model.generate_content([prompt, image])
         return response.text
     except Exception as e:
-        return f"An error occurred: {str(e)}"
+        return f"An error occurred while generating the response, may be the prompt or image is not relevant!"
 
 
 # File uploader

@@ -1,10 +1,25 @@
-# Medi Bud - AI-Powered Medical Chatbot
+<div align="center">
 
-![Medi Bud Logo](https://github.com/CodeRreaper69/MED_BUD_LLM_RAG_LANGCHAIN_MEDICAL_ASSISTANT/blob/main/logo-no-background.png)
+# Medi Bud - AI Powered Medical Chatbot 
+
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-red.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Open Source Love](https://firstcontributions.github.io/open-source-badges/badges/open-source-v2/open-source.svg)](https://github.com/firstcontributions/open-source-badges) 
+[![Frontend](https://img.shields.io/badge/Frontend-Streamlit-pink.svg)](https://streamlit.io/)
+[![Framework](https://img.shields.io/badge/Framework-LangChain-yellow.svg)](https://langchain.com/)
+
+[![linkedin ](https://img.shields.io/badge/Sourabh%20Dey-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sourabh-dey/) 
+[![linkedin ](https://img.shields.io/badge/Aheli%20Poddar-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ahelipoddar/) 
+
+If you find this project helpful, please consider giving it a ⭐ !
+
+---
+
+<img src="https://github.com/CodeRreaper69/MED_BUD_LLM_RAG_LANGCHAIN_MEDICAL_ASSISTANT/blob/main/logo-no-background.png" alt="Medi Bud Logo" style="width: 510px; margin: 20px auto; display: block;">
 
 *Your AI Health Companion - Powered by RAG AND LLM WITH MEMORY RETAINING CAPACITY*
 
 ---
+<div align="left">
 
 ## Overview
 
@@ -13,6 +28,11 @@
 > **Note**: This chatbot is intended for **informational purposes only**. Always consult a healthcare professional for any medical advice.
 
 ---
+<div align="center">
+
+<img src="https://github.com/CodeRreaper69/MED_BUD_LLM_RAG_LANGCHAIN_MEDICAL_ASSISTANT/blob/main/Medi_Bud_dashboard.png" alt="Medi Bud Logo" style="width: 510px; margin: 20px auto; display: block;">
+
+<div align="left">
 
 ## Key Features
 
@@ -52,68 +72,43 @@
 
 ---
 
-## Project Structure
-
-Medi Bud is built as a modular system with the following main components:
-
-### 1. Home Page
-- The introductory page that welcomes the user and allows them to upload medical files.
-- Includes a medical disclaimer to ensure users are aware of the limitations of the chatbot.
-
-### 2. Med Bud With Memory
-- A more advanced version of Medi Bud where chat memory is enabled, making the chatbot able to remember past interactions within the session and respond in a more contextually aware manner.
-
-### 3. Med Bud With Internet Access
-- This version of Medi Bud has access to the internet, allowing it to fetch real-time medical information, making it ideal for health-related research and answering queries that require up-to-date data.
-
-### 4. Enhanced OCR Query
-- This module allows users to upload images of prescriptions or medical documents. Medi Bud processes the images using OCR technology and answers questions related to the content, such as identifying medications, dosages, or usage instructions.
-
----
-
 ## Installation
 
 To set up the project locally, follow the steps below:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/CodeRreaper69/MED_BUD_LLM_RAG_LANGCHAIN_MEDICAL_ASSISTANT.git
-   cd MED_BUD_LLM_RAG_LANGCHAIN_MEDICAL_ASSISTANT
-   ```
+   git clone https://github.com/XAheli/Medi_Bud.git
+   cd Medi_Bud
 
 2. **Create and activate a virtual environment**:
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
 
 3. **Install the required dependencies**:
    ```bash
    pip install -r requirements.txt
-   ```
 
 4. **Run the Streamlit app**:
    ```bash
    streamlit run main.py
-   ```
 
 ---
 
-## How to Use
+## Contributions
 
-1. **Start the application** by running the above `streamlit run` command.
-2. **Upload a prescription** or medical document via the Home Page.
-3. **Interact** with Medi Bud by asking health-related questions or using predefined queries like:
-   - "List all medications"
-   - "Explain usage instructions"
-4. **Switch between different modes** of Medi Bud, such as the version with memory or the one with internet access, to explore the various capabilities of the chatbot.
+Contributions are welcome! If you'd like to contribute to the Medi Bud project, please follow these steps:
+
+- Fork the repository on GitHub.
+- Create a new branch for your feature or bug fix.
+- Make your changes and test thoroughly.
+- Submit a pull request with a clear description of your changes.
+
+We appreciate your interest in improving Medi Bud!
 
 ---
 
 ## Disclaimers
 
-Medi Bud is designed for informational and educational purposes only and **should not** be considered a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified healthcare providers for any medical conditions or health concerns.
-
----
-
-**Medi Bud** offers a promising step toward leveraging AI for healthcare assistance, aiming to improve access to preliminary medical information while keeping users well-informed. Through its combination of advanced AI models and user-friendly design, Medi Bud makes medical knowledge more accessible to everyone.
+Medi Bud is designed for informational and educational purposes only and should not be considered a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified healthcare providers for any medical conditions or health concerns.

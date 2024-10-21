@@ -14,9 +14,9 @@ genai.configure(api_key=GOOGLE_API_KEY)
 # Streamlit page configuration
 st.set_page_config(page_title="Med Bud Prescription Solver", page_icon="💊")
 
-st.title("💊 Prescription Uploader Bot")
+st.title("💊 Prescription Decoder Bot")
 st.caption("Upload a prescription image and ask questions about it!")
-st.write('[![view source code ](https://img.shields.io/badge/view_source_code-gray?logo=github)](https://github.com/XAheli/Medi_Bud)')
+st.write('[![View Source Code](https://img.shields.io/badge/View%20Source%20Code-%2300A7E1.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/XAheli/Medi_Bud/blob/main/LLM_Langchain_BOT/pages/2%20%F0%9F%8C%90%20Med_Bud_With_Web_Access.py)')
 
 @st.cache_resource
 def load_gemini_model():

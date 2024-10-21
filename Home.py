@@ -181,21 +181,21 @@ st.markdown('</div>', unsafe_allow_html=True)
 
 # Author Details
 st.write("""
-<div align="center" style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
-    <div style="display: flex; justify-content: center; align-items: center; gap: 15px;">
+<div align="center" style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+    <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
         <a href="https://github.com/XAheli/Medi_Bud" target="_blank">
-            <img src="https://img.shields.io/badge/GitHub-Repository-%23181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repository">
+            <img src="https://img.shields.io/badge/GitHub-Repository-%23181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repository" style="height: 24px;">
         </a>
         <a href="https://www.linkedin.com/in/ahelipoddar/" target="_blank">
-            <img src="https://img.shields.io/badge/Aheli%20Poddar-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="Aheli Poddar LinkedIn">
+            <img src="https://img.shields.io/badge/Aheli%20Poddar-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="Aheli Poddar LinkedIn" style="height: 24px;">
         </a>
         <a href="https://www.linkedin.com/in/sourabh-dey/" target="_blank">
-            <img src="https://img.shields.io/badge/Sourabh%20Dey-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="Sourabh Dey LinkedIn">
+            <img src="https://img.shields.io/badge/Sourabh%20Dey-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="Sourabh Dey LinkedIn" style="height: 24px;">
         </a>
     </div>
-    <div style="display: flex; justify-content: center; align-items: center; gap: 5px; margin-top: 10px;">
-        <span style="font-size: 14px; color: #5d5d5d;">𝚈𝚘𝚞 𝚊𝚛𝚎 𝚟𝚒𝚜𝚒𝚝𝚘𝚛</span>
-        <img src="https://profile-counter.glitch.me/Medi_Bud_Streamlit/count.svg" alt="visitor count" style="height: 28px;"/>
+    <div style="display: flex; justify-content: center; align-items: center; gap: 5px; margin-top: 8px;">
+        <span style="font-size: 12px; color: #5d5d5d;">𝚈𝚘𝚞 𝚊𝚛𝚎 𝚟𝚒𝚜𝚒𝚝𝚘𝚛</span>
+        <img src="https://profile-counter.glitch.me/Medi_Bud_Streamlit/count.svg" alt="visitor count" style="height: 24px;"/>
     </div>
 </div>
 """, unsafe_allow_html=True)

@@ -92,7 +92,7 @@ To set up the project locally, follow the steps below:
 
 4. **Run the Streamlit app**:
    ```bash
-   streamlit run main.py
+   streamlit run Home.py
 
 ---
 

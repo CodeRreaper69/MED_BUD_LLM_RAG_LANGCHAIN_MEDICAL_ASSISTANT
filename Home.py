@@ -183,8 +183,19 @@ st.markdown('</div>', unsafe_allow_html=True)
 st.write("""
 [![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-%23181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/XAheli/Medi_Bud)
 [![Sourabh Dey LinkedIn](https://img.shields.io/badge/Sourabh%20Dey-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sourabh-dey/)
-[![Aheli Poddar LinkedIn](https://img.shields.io/badge/Aheli%20Poddar-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ahelipoddar/)
-![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Flangchain-chatbot.streamlit.app&label=Visitors&labelColor=%235d5d5d&countColor=%231e7ebf&style=for-the-badge)""")
+[![Aheli Poddar LinkedIn](https://img.shields.io/badge/Aheli%20Poddar-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ahelipoddar/)""")
+
+st.write("""
+<div align="center">
+    <table>
+        <tr>
+            <td>𝚈𝚘𝚞 𝚊𝚛𝚎 𝚟𝚒𝚜𝚒𝚝𝚘𝚛</td>
+            <td><img src="https://profile-counter.glitch.me/Medi_Bud_Streamlit/count.svg" alt="visitor count" /></td>
+        </tr>
+    </table>
+</div>
+""", unsafe_allow_html=True)
+
 # Features Section
 st.markdown("""
 <div class="feature-card">

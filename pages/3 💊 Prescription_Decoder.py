@@ -54,16 +54,16 @@ if uploaded_file is not None:
     st.subheader("Or try these predefined questions:")
     if st.button("List all medications"):
         with st.spinner("Analyzing medications..."):
-            medications = analyze_prescription(image, "List all medications or causes mentioned in this prescription with their dosages or remedies.")
+            medications = analyze_prescription(image, "List all medications or causes mentioned in this prescription with their dosages or remedies or else tell me something about the image.")
             st.write(medications)
     
-    if st.button("Identify potential side effects"):
+    if st.button("Identify potential side effects or something that might happen to the patient if taken in wrong way at wrong time"):
         with st.spinner("Analyzing potential side effects..."):
-            side_effects = analyze_prescription(image, "What are the potential side effects of the medications in this prescription?")
+            side_effects = analyze_prescription(image, "What are the potential side effects of the medications in this prescription? or tell me something about this image")
             st.write(side_effects)
     
     if st.button("Explain usage instructions"):
-        with st.spinner("Analyzing usage instructions..."):
+        with st.spinner("Analyzing usage instructions... and tell me the time at which the patient should consume the medication or dosage as mentioned in prescription, else tell me something about the image"):
             instructions = analyze_prescription(image, "Explain the usage instructions for each medication in this prescription.")
             st.write(instructions)
 

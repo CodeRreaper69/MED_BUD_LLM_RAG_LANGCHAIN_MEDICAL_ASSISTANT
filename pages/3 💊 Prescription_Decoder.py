@@ -26,11 +26,12 @@ model = load_gemini_model()
 
 def analyze_prescription(image, prompt):
     try:
-        # Use the PIL image directly
         response = model.generate_content([prompt, image])
-        return response.text
+        st.write(response)  # Log the full response for debugging
+        return response.text if hasattr(response, 'text') else "No valid response received."
     except Exception as e:
         return f"An error occurred: {str(e)}"
+
 
 # File uploader
 uploaded_file = st.file_uploader("Upload a prescription image", type=["jpg", "jpeg", "png"])

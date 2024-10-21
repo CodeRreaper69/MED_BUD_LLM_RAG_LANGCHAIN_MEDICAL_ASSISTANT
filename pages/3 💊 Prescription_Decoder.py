@@ -54,7 +54,7 @@ if uploaded_file is not None:
     st.subheader("Or try these predefined questions:")
     if st.button("List all medications"):
         with st.spinner("Analyzing medications..."):
-            medications = analyze_prescription(image, "List all medications mentioned in this prescription with their dosages.")
+            medications = analyze_prescription(image, "List all medications or causes mentioned in this prescription with their dosages or remedies.")
             st.write(medications)
     
     if st.button("Identify potential side effects"):

@@ -8,7 +8,7 @@ from PIL import Image
 #load_dotenv()
 
 # Configure Google API
-GOOGLE_API_KEY = st.secrets("API_KEY")
+GOOGLE_API_KEY = st.secrets["API_KEY"]
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # Streamlit page configuration

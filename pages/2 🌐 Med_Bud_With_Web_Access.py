@@ -12,7 +12,7 @@ from langchain_core.tools import Tool
 st.set_page_config(page_title="Med Bud RAG Net", page_icon="🌎")
 st.header('AI Med bot with Web Access')
 st.write('Equipped with internet access, enables users to ask questions about recent events')
-#st.write('[![view source code ](https://img.shields.io/badge/view_source_code-gray?logo=github)](https://github.com/XAheli/Medi_Bud)')
+st.write('[![view source code ](https://img.shields.io/badge/view_source_code-gray?logo=github)](https://github.com/XAheli/Medi_Bud)')
 
 class InternetChatbot:
 

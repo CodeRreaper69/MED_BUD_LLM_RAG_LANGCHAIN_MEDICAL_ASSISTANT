@@ -16,7 +16,7 @@ st.caption("Kindy keep the document size less than 1.5MB")
 if st.button("🏠 Back to Home"):
     st.experimental_set_query_params()
     st.experimental_rerun()
-    st.switch_page("Home.py")
+    #st.switch_page("Home.py")
 class MedicalChatbot:
 
     def __init__(self):

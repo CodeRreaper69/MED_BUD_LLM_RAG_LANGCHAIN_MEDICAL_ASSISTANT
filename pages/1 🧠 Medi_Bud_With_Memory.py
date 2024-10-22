@@ -145,7 +145,7 @@ class MedicalChatbot:
         except:
             st.warning("Some error might have happened due to the size of the files, reduce the file size and try again")
         if st.button("🏠 Back to Home"):
-            st.switch_page("Home")
+            st.switch_page("../Home.py")
 
 if __name__ == "__main__":
     obj = MedicalChatbot()

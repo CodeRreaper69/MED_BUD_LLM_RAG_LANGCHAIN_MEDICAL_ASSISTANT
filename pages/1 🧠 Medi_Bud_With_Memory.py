@@ -14,7 +14,7 @@ st.write('Providing preliminary consultations and answering health-related queri
 st.write('[![View Source Code](https://img.shields.io/badge/View%20Source%20Code-%2300A7E1.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/XAheli/Medi_Bud)')
 st.caption("Kindy keep the document size less than 1.5MB")
 if st.button("🏠 Back to Home"):
-    st.switch_page("../Home.py")
+    st.switch_page("Home")
 class MedicalChatbot:
 
     def __init__(self):

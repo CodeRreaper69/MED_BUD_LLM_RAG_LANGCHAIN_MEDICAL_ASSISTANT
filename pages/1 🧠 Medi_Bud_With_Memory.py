@@ -13,10 +13,7 @@ st.header('AI-Powered Virtual Health Assistant')
 st.write('Providing preliminary consultations and answering health-related queries for patients in remote areas.')
 st.write('[![View Source Code](https://img.shields.io/badge/View%20Source%20Code-%2300A7E1.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/XAheli/Medi_Bud)')
 st.caption("Kindy keep the document size less than 1.5MB")
-if st.button("🏠 Back to Home"):
-    st.experimental_set_query_params()
-    st.experimental_rerun()
-    #st.switch_page("Home.py")
+st.markdown("[🏠 Back to Home](../Home.py)")
 class MedicalChatbot:
 
     def __init__(self):

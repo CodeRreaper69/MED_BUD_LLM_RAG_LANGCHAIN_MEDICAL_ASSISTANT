@@ -238,14 +238,33 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# Navigation Buttons
+# Navigation Buttons with Info Sections
+st.header("Medi Bud - Choose Your Assistant")
+
+# Medi Bud With Memory
 if st.button("🧠 Medi Bud With Memory"):
     st.switch_page("pages/1 🧠 Medi_Bud_With_Memory.py")
+with st.expander("ℹ️ More info about Medi Bud With Memory"):
+    st.info("""
+This feature allows you to ask general medical queries. Additionally, you can upload a small medical PDF document (< 2MB), and the assistant will respond based on its contents. 
+Use this feature to ask personalized medical questions about your reports or prescriptions.
+""")
+
+# Medi Bud With Web Access
 if st.button("🌐 Medi Bud With Web Access"):
     st.switch_page("pages/2 🌐 Medi_Bud_With_Web_Access.py")
+with st.expander("ℹ️ More info about Medi Bud With Web Access"):
+    st.info("""
+This feature lets you ask medical queries using the latest information available on the web. You can inquire about recent medical news, treatments, or medicines, and it will search the web to provide updated responses.
+""")
+
+# Prescription Decoder
 if st.button("💊 Prescription Decoder"):
     st.switch_page("pages/3 💊 Prescription_Decoder.py")
-
+with st.expander("ℹ️ More info about Prescription Decoder"):
+    st.info("""
+With this feature, you can upload a medical prescription that may be difficult to read or interpret due to handwriting or medical abbreviations. The assistant will help you understand the prescription and provide clear answers to any related questions.
+""")
 
 # Footer
 st.markdown("""

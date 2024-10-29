@@ -246,7 +246,7 @@ if st.button("🧠 Medi Bud With Memory"):
     st.switch_page("pages/1 🧠 Medi_Bud_With_Memory.py")
 with st.expander(":red[ℹ️ More info about Medi Bud With Memory]"):
     st.info("""
-This feature allows you to ask general medical queries. Additionally, you can upload a small medical PDF document (< 2MB), and the assistant will respond based on its contents. 
+This feature allows you to ask general medical queries. Additionally, you can upload a small medical PDF document (< 1MB), and the assistant will respond based on its contents. 
 Use this feature to ask personalized medical questions about your reports or prescriptions.
 """)
 

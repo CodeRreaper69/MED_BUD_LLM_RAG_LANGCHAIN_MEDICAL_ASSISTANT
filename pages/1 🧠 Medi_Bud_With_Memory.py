@@ -146,6 +146,11 @@ class MedicalChatbot:
             st.warning("Some error might have happened due to the size of the files, reduce the file size and try again")
 
 if __name__ == "__main__":
-    obj = MedicalChatbot()
-    obj.main()
+    try:
+        obj = MedicalChatbot()
+        obj.main()
+    except Exception as e:
+        st.warning("Section Under Maintenance")
+        st.info(f"Error details: {e}")
+
     

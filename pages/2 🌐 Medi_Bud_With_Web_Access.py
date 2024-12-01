@@ -69,6 +69,6 @@ if __name__ == "__main__":
         obj = InternetChatbot()
         obj.main()
     except Exception as e:
-        st.warning("Section Under Maintenance")
+        st.warning("Section Under Maintenance,Comeback Later!Check our Prescription decoder section until that!")
         st.info(f"Error details: {e}")
 

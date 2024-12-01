@@ -120,6 +120,6 @@ def sync_st_session():
         
 def get_prompt_template():
     template = f"""You are an AI-powered Virtual Health Assistant designed to provide preliminary consultations and answer health-related queries for patients in remote areas. Use the chat history and the user's question to provide a helpful, accurate, and empathetic response. If the query involves a medical emergency, always advise the user to seek immediate professional medical help."""
-
+    return template
 # Chat History:
 # {chat_history}"""

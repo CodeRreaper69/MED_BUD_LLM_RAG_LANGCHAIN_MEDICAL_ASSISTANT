@@ -83,27 +83,26 @@ def choose_custom_openai_key():
     return model, openai_api_key
 
 def configure_llm():
-    available_llms = ["gpt-4","llama3.2:3b","gemini","use your openai api key"]
-    #available_llms = ["gpt-4","gemini","use your openai api key"]
-    llm_opt = st.sidebar.radio(
-        label="LLM",
-        options=available_llms,
-        key="SELECTED_LLM"
-        )
+    available_llms = ["gpt-4", "llama3.2:3b", "gemini", "use your openai api key"]
+    llm_opt = st.sidebar.radio(label="LLM", options=available_llms, key="SELECTED_LLM")
 
-    # if llm_opt == "llama3.1:8b":
-        # llm = ChatOllama(model="llama3.1", base_url=os.getenv["OLLAMA_ENDPOINT"])
-    if llm_opt == "llama3.2:3b":
-        llm = ChatOpenAI(model_name="gpt-4", temperature=0, streaming=True, api_key=st.secrets["OLLAMA_ENDPOINT_KEY"])
-    elif llm_opt == "gpt-4":
-        #llm = ChatOpenAI(model_name=llm_opt, temperature=0, streaming=True, api_key=os.getenv["OPENAI_API_KEY"])
-        llm = ChatOpenAI(model_name="gpt-4", temperature=0, streaming=True, api_key=st.secrets["OPENAI_API_KEY"])
-    elif llm_opt == "gemini":
-        llm = ChatOpenAI(model_name="gpt-4", temperature=0, streaming=True, api_key=st.secrets["GEMINI_API_KEY"])
-    else:
-        model, openai_api_key = choose_custom_openai_key()
-        llm = ChatOpenAI(model_name=model, temperature=0, streaming=True, api_key=openai_api_key)
-    return llm
+    try:
+        if llm_opt == "llama3.2:3b":
+            llm = ChatOllama(model="llama3.2", base_url=st.secrets["OLLAMA_ENDPOINT_KEY"])
+        elif llm_opt == "gpt-4":
+            llm = ChatOpenAI(model_name="gpt-4", temperature=0, streaming=True, api_key=st.secrets["OPENAI_API_KEY"])
+        elif llm_opt == "gemini":
+            llm = ChatOpenAI(model_name="gpt-4", temperature=0, streaming=True, api_key=st.secrets["GEMINI_API_KEY"])
+        else:
+            model, openai_api_key = choose_custom_openai_key()
+            llm = ChatOpenAI(model_name=model, temperature=0, streaming=True, api_key=openai_api_key)
+        return llm
+    except KeyError as e:
+        st.error(f"Missing API Key: {e}")
+        return None
+    except Exception as e:
+        st.error(f"Error configuring LLM: {e}")
+        return None
 
 def print_qa(cls, question, answer):
     log_str = "\nUsecase: {}\nQuestion: {}\nAnswer: {}\n" + "------"*10

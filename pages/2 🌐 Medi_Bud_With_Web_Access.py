@@ -63,6 +63,12 @@ class InternetChatbot:
             st.warning("Some error occured due to large requests fetching... please try something less complex or simpler for the model to react")
             #utils.print_qa(InternetChatbot, user_query, response)
                 
+
 if __name__ == "__main__":
-    obj = InternetChatbot()
-    obj.main()
+    try:
+        obj = InternetChatbot()
+        obj.main()
+    except Exception as e:
+        st.warning("Section Under Maintenance")
+        st.info(f"Error details: {e}")
+

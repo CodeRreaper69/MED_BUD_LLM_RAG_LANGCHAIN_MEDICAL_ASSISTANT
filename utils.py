@@ -61,7 +61,7 @@ def choose_custom_openai_key():
         st.info("Obtain your key from this link: https://platform.openai.com/account/api-keys")
         st.stop()
 
-    model = "gpt-4"
+    model = "gpt-4o-mini"
     try:
         client = openai.OpenAI(api_key=openai_api_key)
         available_models = [{"id": i.id, "created":datetime.fromtimestamp(i.created)} for i in client.models.list() if str(i.id).startswith("gpt")]
@@ -83,26 +83,27 @@ def choose_custom_openai_key():
     return model, openai_api_key
 
 def configure_llm():
-    available_llms = ["gpt-4", "llama3.2:3b", "gemini", "use your openai api key"]
-    llm_opt = st.sidebar.radio(label="LLM", options=available_llms, key="SELECTED_LLM")
+    available_llms = ["gpt-4o-mini","llama3.2:3b","gemini","use your openai api key"]
+    #available_llms = ["gpt-4o-mini","gemini","use your openai api key"]
+    llm_opt = st.sidebar.radio(
+        label="LLM",
+        options=available_llms,
+        key="SELECTED_LLM"
+        )
 
-    try:
-        if llm_opt == "llama3.2:3b":
-            llm = ChatOllama(model="llama3.2", base_url=st.secrets["OLLAMA_ENDPOINT_KEY"])
-        elif llm_opt == "gpt-4":
-            llm = ChatOpenAI(model_name="gpt-4", temperature=0, streaming=True, api_key=st.secrets["OPENAI_API_KEY"])
-        elif llm_opt == "gemini":
-            llm = ChatOpenAI(model_name="gpt-4", temperature=0, streaming=True, api_key=st.secrets["GEMINI_API_KEY"])
-        else:
-            model, openai_api_key = choose_custom_openai_key()
-            llm = ChatOpenAI(model_name=model, temperature=0, streaming=True, api_key=openai_api_key)
-        return llm
-    except KeyError as e:
-        st.error(f"Missing API Key: {e}")
-        return None
-    except Exception as e:
-        st.error(f"Error configuring LLM: {e}")
-        return None
+    # if llm_opt == "llama3.1:8b":
+        # llm = ChatOllama(model="llama3.1", base_url=os.getenv["OLLAMA_ENDPOINT"])
+    if llm_opt == "llama3.2:3b":
+        llm = ChatOpenAI(model_name="gpt-4o-mini", temperature=0, streaming=True, api_key=st.secrets["OLLAMA_ENDPOINT_KEY"])
+    elif llm_opt == "gpt-4o-mini":
+        #llm = ChatOpenAI(model_name=llm_opt, temperature=0, streaming=True, api_key=os.getenv["OPENAI_API_KEY"])
+        llm = ChatOpenAI(model_name="gpt-4o-mini", temperature=0, streaming=True, api_key=st.secrets["OPENAI_API_KEY"])
+    elif llm_opt == "gemini":
+        llm = ChatOpenAI(model_name="gpt-4o-mini", temperature=0, streaming=True, api_key=st.secrets["GEMINI_API_KEY"])
+    else:
+        model, openai_api_key = choose_custom_openai_key()
+        llm = ChatOpenAI(model_name=model, temperature=0, streaming=True, api_key=openai_api_key)
+    return llm
 
 def print_qa(cls, question, answer):
     log_str = "\nUsecase: {}\nQuestion: {}\nAnswer: {}\n" + "------"*10
